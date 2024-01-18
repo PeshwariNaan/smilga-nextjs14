@@ -17,5 +17,5 @@ export function middleware(request) {
 
 //Restricting more than one route
 export const config = {
-  matcher: ['/about/:path*', '/tasks/:path*'],
+  matcher: ['/about/:path*'],
 }
