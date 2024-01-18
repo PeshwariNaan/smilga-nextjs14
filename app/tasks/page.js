@@ -1,13 +1,14 @@
-import Link from 'next/link'
+import TaskForm from '@/components/TaskForm'
+import TaskFormCustom from '@/components/TaskFormCustom'
+import TaskList from '@/components/TaskList'
 import React from 'react'
 
 const TasksPage = () => {
   return (
-    <div>
+    <div className="max-w-lg">
       <h1 className="text-2xl">Tasks page</h1>
-      <Link href="/" className="text-2xl">
-        home page
-      </Link>
+      <TaskFormCustom />
+      <TaskList />
     </div>
   )
 }
